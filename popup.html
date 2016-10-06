@@ -33,20 +33,30 @@
       }
       #pandaHeader {
         display: flex;
-        align-items: center;
-      }
-      #heading {
-        font-size: 14px;
-        margin-right: auto;
-        margin-bottom: 8px;
+        align-items: flex-end;
       }
       #refresh {
         height: 30px;
         margin-bottom: 8px;
         cursor: pointer;
+        margin-left: auto;
+      }
+      .tab {
+        font-size: 14px;
+        padding: 5px 15px;
+        cursor: pointer;
+        background: white;
+        border: 1px solid #aaa;
+        border-bottom: none;
+        margin-right: 5px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+      }
+      .active {
+        font-weight: bold;
       }
       .loading {
-        animation:spin 4s linear infinite;
+        animation:spin 1s linear infinite;
       }
       @keyframes spin {
         100% {
@@ -57,7 +67,8 @@
   </head>
   <body>
     <div id="pandaHeader">
-      <span id="heading">Washing machine status in building 6</span>
+      <div id="tab-building-6" class="tab">Building 6</div>
+      <div id="tab-building-18" class="tab">Building 18</div>
       <img id="refresh" src="refresh.svg"/>
     </div>
     <script src="popup.js"></script>
