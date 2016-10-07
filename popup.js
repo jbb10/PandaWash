@@ -19,6 +19,7 @@ var getWashRoomData = function() {
         break;
       default:
         x.open('GET', "http://"+washRoom6+"/Status.asp");
+        currentWashRoom = 6;
       }
 
     x.responseType = 'document';
