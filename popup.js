@@ -41,7 +41,7 @@ var getWashRoomData = function() {
 
         machines.push({
           0: tds[0].textContent.replace(/\s/g,'').replace(/VASK/gi,'Washing machine ').replace(/TUMBLER\s*/gi,'Tumbler '),
-          //1: tds[1].textContent.replace(/\s/g,''),
+          //1: tds[1].textContent.replace(/\s/g,''), We don't care about price
           1: tds[2].textContent.replace(/\s/g,'').replace(/Fri/gi,'Free').replace(/Optaget/gi,'Occupied'),
           2: tds[3].textContent.replace(/\s/g,''),
           3: tds[4].textContent.replace(/\s/g,'')
