@@ -11,7 +11,7 @@
         font-family: "Kollektif", Tahoma, sans-serif;
         font-size: 15px;
         min-width: 381px;
-        min-height: 213px;
+        min-height: 205px;
         background-image: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%,rgba(255,255,255,0.9) 100%), url(panda.svg);
         background-position: 50%;
         background-size: 100%, 205px;
@@ -41,7 +41,7 @@
         align-items: flex-end;
       }
       #refresh {
-        height: 30px;
+        height: 22px;
         margin-bottom: 8px;
         cursor: pointer;
         margin-left: auto;
@@ -60,7 +60,12 @@
       }
       .active {
         font-weight: bold;
-        text-decoration: underline;
+        background-image: url(panda.svg);
+        background-repeat: no-repeat;
+        padding-left: 42px;
+        background-position: 12px 50%;
+        background-size: 23px;
+        background-color: darkgray;
       }
       .loading {
         animation:spin 1s linear infinite;
